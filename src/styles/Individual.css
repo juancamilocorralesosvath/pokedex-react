@@ -1,0 +1,126 @@
+
+.poke-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: royalblue;
+}
+.poke-info{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+}
+.previous-next-buttons{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+}
+.buttons{
+    height: 100%;
+    width: 100%;
+    background-color: #a4a4a4;;
+    display: flex;
+    border-radius: 10px;
+}
+.buttons:hover{
+    cursor: pointer;
+    background-color: rgb(143, 143, 158);
+}
+/* .previous{
+    
+} */
+.next{
+    justify-content: flex-end;
+}
+.image-and-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container{
+    height: auto;
+    width: 50%;
+    background-color: rgba(154, 144, 163, 0.294);
+    border-radius: 10px;
+} 
+.my-image{
+    width: 100%;
+    height: 100%;
+} 
+.info{
+    background-color: #30a7d7;
+    width: 50%;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* esto como que no me ayuda en nada, por ahora. */
+/*     display: flex;
+    flex-direction: column; */
+}
+.types-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.poke-type{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    width: 25%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.abilities-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.poke-abilities{
+    list-style-type: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.height-and-weight{
+    display: flex;
+    justify-content: space-around;
+}
+.height-weight-results{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 425px){
+    .image-and-info-container{
+        flex-direction: column;
+    }
+    .poke-type{
+        width: 50%;
+    }
+    .buttons{
+        height: 50%;
+    }
+    .next-previous-spans{
+        height: 80%;
+    }
+    .poke-abilities{
+        width: 50%;
+        font-size: smaller;
+    }
+    .height-and-weight > h3{
+        font-size: smaller;
+    }
+    .height-weight-results > p{
+        font-size: smaller;
+    }
+}

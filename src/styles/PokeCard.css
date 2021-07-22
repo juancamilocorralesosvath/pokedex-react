@@ -1,0 +1,33 @@
+
+.poke-card{
+    width: 30em !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 10px;
+}
+.poke-card:hover{
+    background-color: rgba(238, 223, 223, 0.89);
+    width: 29em !important;
+}
+.pokeball-img{
+    height: 2em;
+}
+@media only screen and (max-width: 425px){
+    .poke-card{
+        width: 10em !important;
+        height: 15.5em !important;
+    }
+    .poke-card:hover{
+        background-color: rgba(238, 223, 223, 0.89);
+        width: 9.5em !important;
+    }
+    .poke-card-title{
+        font-size: large;
+    }
+    .poke-button{
+        height: 2em;
+        font-size: small;
+    }
+
+}
